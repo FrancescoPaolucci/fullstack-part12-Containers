@@ -1,0 +1,33 @@
+﻿**********************
+Inizio trascrizione Windows PowerShell
+Ora di inizio: 20211119004914
+Nome utente: DESKTOP-CDUTFLR\Franc
+Esegui come utente: DESKTOP-CDUTFLR\Franc
+Nome configurazione: 
+Computer DESKTOP-CDUTFLR (Microsoft Windows NT 10.0.22000.0)
+Applicazione host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ID processo: 18492
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Trascrizione avviata. File di output: C:\Users\Franc\Documents\PowerShell_transcript.DESKTOP-CDUTFLR.eiEY9QRG.20211119004914.txt
+PS C:\WINDOWS\system32> docker exec -it todo-backend-mongo-1 bash
+root@9fd0a8f8b70e:/# redis-cli KEYS
+bash: redis-cli: command not found
+root@9fd0a8f8b70e:/# redis-cli KEYS count
+bash: redis-cli: command not found
+root@9fd0a8f8b70e:/# Stop-transcript
+bash: Stop-transcript: command not found
+root@9fd0a8f8b70e:/# exit
+exit
+PS C:\WINDOWS\system32> Stop-transcript
+**********************
+Fine trascrizione Windows PowerShell
+Ora di fine: 20211119005020
+**********************

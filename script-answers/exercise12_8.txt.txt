@@ -1,0 +1,90 @@
+﻿**********************
+Inizio trascrizione Windows PowerShell
+Ora di inizio: 20211118230611
+Nome utente: DESKTOP-CDUTFLR\Franc
+Esegui come utente: DESKTOP-CDUTFLR\Franc
+Nome configurazione: 
+Computer DESKTOP-CDUTFLR (Microsoft Windows NT 10.0.22000.0)
+Applicazione host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ID processo: 14684
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Trascrizione avviata. File di output: C:\Users\Franc\Documents\PowerShell_transcript.DESKTOP-CDUTFLR.GfePYRVH.20211118230611.txt
+PS D:\randomroba\UNI\part12-containers-applications\todo-app\todo-backend> docker container ls
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS                     NAMES
+875229877e08   mongo     "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3456->27017/tcp   todo-backend-mongo
+-1
+PS D:\randomroba\UNI\part12-containers-applications\todo-app\todo-backend> docker exec -it todo-backend-mongo-1 bash
+root@875229877e08:/# show dbs
+bash: show: command not found
+root@875229877e08:/# mongo -u root -p example
+MongoDB shell version v5.0.4
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("54e2218f-2003-49bf-90b7-84b8d75418ae") }
+MongoDB server version: 5.0.4
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+        https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+        https://community.mongodb.com
+---
+The server generated these startup warnings when booting:
+        2021-11-18T21:04:38.985+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.
+org/core/prodnotes-filesystem
+        2021-11-18T21:04:40.457+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+>
+> show dbs
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_database
+switched to db the_database
+> show collections
+todos
+> db.todos.find({})
+{ "_id" : ObjectId("6196bfe513d299a83c1da3af"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("6196bfe513d299a83c1da3b0"), "text" : "Learn about containers", "done" : false }
+> db.todos.insert({"text": "trying exec", "done": "true"})
+WriteResult({ "nInserted" : 1 })
+> db.todos.find({})
+{ "_id" : ObjectId("6196bfe513d299a83c1da3af"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("6196bfe513d299a83c1da3b0"), "text" : "Learn about containers", "done" : false }
+{ "_id" : ObjectId("6196c10ee690736b66629d70"), "text" : "trying exec", "done" : "true" }
+>
+> exit
+bye
+root@875229877e08:/# exit
+exit
+PS D:\randomroba\UNI\part12-containers-applications\todo-app\todo-backend> Stop-Transcript
+**********************
+Fine trascrizione Windows PowerShell
+Ora di fine: 20211118231002
+**********************

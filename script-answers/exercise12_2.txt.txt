@@ -1,0 +1,50 @@
+**********************
+Inizio trascrizione Windows PowerShell
+Ora di inizio: 20211118164950
+Nome utente: DESKTOP-CDUTFLR\Franc
+Esegui come utente: DESKTOP-CDUTFLR\Franc
+Nome configurazione: 
+Computer DESKTOP-CDUTFLR (Microsoft Windows NT 10.0.22000.0)
+Applicazione host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ID processo: 9960
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Trascrizione avviata. File di output: C:\Users\Franc\Documents\PowerShell_transcript.DESKTOP-CDUTFLR.lwBBS2LB.20211118164950.txt
+PS C:\Program Files\Docker\Docker> echo hello world!
+hello
+world!
+PS C:\Program Files\Docker\Docker> docker run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+7b1a6ab2e44d: Pull complete
+Digest: sha256:626ffe58f6e7566e00254b638eb7e0f3b11d4da9675088f4781a50ae288f3322
+Status: Downloaded newer image for ubuntu:latest
+root@24e2d9ea7a69:/# ls usr
+bin  games  include  lib  lib32  lib64  libx32  local  sbin  share  src
+root@24e2d9ea7a69:/# cd usr
+root@24e2d9ea7a69:/usr# cd src
+root@24e2d9ea7a69:/usr/src# cd app
+bash: cd: app: No such file or directory
+root@24e2d9ea7a69:/usr/src# cd app
+bash: cd: app: No such file or directory
+root@24e2d9ea7a69:/usr/src# mkdir app
+root@24e2d9ea7a69:/usr/src# cd app
+root@24e2d9ea7a69:/usr/src/app# echo> index.js
+root@24e2d9ea7a69:/usr/src/app# cd index.js
+bash: cd: index.js: Not a directory
+root@24e2d9ea7a69:/usr/src/app# cd as.js
+bash: cd: as.js: No such file or directory
+root@24e2d9ea7a69:/usr/src/app# exit
+exit
+PS C:\Program Files\Docker\Docker> Stop-Transcript
+**********************
+Fine trascrizione Windows PowerShell
+Ora di fine: 20211118165600
+**********************

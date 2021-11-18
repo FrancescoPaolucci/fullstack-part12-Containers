@@ -1,0 +1,28 @@
+﻿**********************
+Inizio trascrizione Windows PowerShell
+Ora di inizio: 20211118171859
+Nome utente: DESKTOP-CDUTFLR\Franc
+Esegui come utente: DESKTOP-CDUTFLR\Franc
+Nome configurazione: 
+Computer DESKTOP-CDUTFLR (Microsoft Windows NT 10.0.22000.0)
+Applicazione host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ID processo: 9960
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Trascrizione avviata. File di output: C:\Users\Franc\Documents\PowerShell_transcript.DESKTOP-CDUTFLR.FTRUkx62.20211118171859.txt
+PS C:\Program Files\Docker\Docker> docker start -i epic_hermann
+root@24e2d9ea7a69:/# nano /usr/src/app/index.js
+root@24e2d9ea7a69:/# exit
+exit
+PS C:\Program Files\Docker\Docker> Stop-Transcript
+**********************
+Fine trascrizione Windows PowerShell
+Ora di fine: 20211118172006
+**********************
