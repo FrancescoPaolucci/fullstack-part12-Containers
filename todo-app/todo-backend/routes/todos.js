@@ -53,10 +53,9 @@ singleRouter.get('/', async (req, res) => {
 });
 
 router.get('/statistics', async (_ , res) => {
-
-  const count = await getAsync("count")
+const count = await getAsync("count")
 console.log("Ping")
-  return res.json({"added_todos" : count || null })
+ return res.json({"added_todos" : count || null })
 })
 
 /* PUT todo. */
